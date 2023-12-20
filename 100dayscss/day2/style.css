@@ -1,0 +1,139 @@
+* {
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 350px;
+    height: 350px;
+    background-color:#3FAF82;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center {
+    display: flex;
+    top: 50%;
+    position: absolute;
+    left: 40%;
+    transform: translate(-50, -50);
+    cursor: pointer;
+}
+
+.line {
+    width: 80px;
+    height: 10px;
+    background-color: aliceblue;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.line:nth-child(1) {
+    animation: open-menu1 1s forwards;
+}
+
+.line:nth-child(2) {
+    animation: open-menu2 1s forwards;
+}
+
+.line:nth-child(3) {
+    animation: open-menu3 1s forwards;
+}
+
+.open .line:nth-child(1) {
+    animation: close-menu1 1s forwards;
+}
+
+.open .line:nth-child(2) {
+    animation: close-menu2 1s forwards;
+}
+
+.open .line:nth-child(3) {
+    animation: close-menu3 1s forwards;
+}
+
+@keyframes open-menu1 {
+    0% {
+        transform: translateY(25px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes open-menu2 {
+    0% {
+        scale: 100%;
+    }
+
+    100% {
+        scale: 0%;
+    }
+}
+
+@keyframes open-menu3 {
+    0% {
+        transform: translateY(-25px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes close-menu1 {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(25px);
+    }
+}
+
+@keyframes close-menu2 {
+    0% {
+        scale: 0%;
+    }
+
+    100% {
+        scale: 100%;
+    }
+}
+
+@keyframes close-menu3 {
+    0% {
+        transform: rotate(135deg);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-25px);
+    }
+}
