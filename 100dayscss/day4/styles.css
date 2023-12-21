@@ -1,0 +1,103 @@
+:root{
+	--bezier: cubic-bezier(.21,.98,.6,.99);
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #d65050;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);	
+    position: absolute;
+    left: 90px;
+  top: 90px;
+}
+.circ__one{
+	width: 150px;
+	height: 150px;
+	background-color: #f7e3b2;
+	border-radius: 50%;
+	position: absolute;
+	left: 30px;
+    top: 30px;
+	animation-fill-mode: both;
+	animation: movie-one 2s var(--bezier) infinite alternate;
+	
+}
+
+.circ__two{
+	width: 100px;
+	height: 100px;
+	background: #f7e3b2;
+	border-radius: 50%;
+	position:absolute;
+	left: 60px;
+    top: 60px;
+	animation-fill-mode: both;
+	animation: movie-two 2s var(--bezier) infinite alternate;
+	
+}
+
+.circ__three{
+	width: 50px;
+	height: 50px;
+	background: #f7e3b2;
+	border-radius: 50%;
+
+	position: absolute;
+	left: 90px;
+    top: 90px;
+	animation-fill-mode: both;
+	animation: movie-three 2s var(--bezier) infinite alternate;
+	
+}
+
+@keyframes movie-one{
+	0%, 70%{
+		box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2);
+		transform:scale(0);
+	}
+	100%{
+		box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+		transform:scale(1);
+	}
+}
+
+@keyframes movie-two{
+	0%, 40%{
+		box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2);
+		transform: scale(0);
+	}
+	100%{
+		box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+		transform: scale(1);
+	}
+}
+
+@keyframes movie-three{
+	0% , 10%{
+		box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2);
+		transform: scale(0);
+	}
+	100%{
+		box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+		transform: scale(1);
+	}
+}
