@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+ 
+	background:linear-gradient(45deg, #e8947c, #a47c5c);
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	background-color:#fcecdc;
+	width: 320px;
+	height:320px;
+	border-radius:2px;
+	display:flex;
+	flex-direction:column;
+	align-items:flex-end;
+	
+}
+.profile{
+	position:absolute;
+	z-index: 1000;
+	right: 100px;
+	left: -10px;
+	top:75px;
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.img{
+	border-radius:50%;
+
+}
+
+.name{
+	font-weight:700;
+	margin-top:0.5em;
+	margin-bottom: 0.8em;
+}
+
+.job{
+	font-size:11px;
+	margin-bottom: 1.5em;
+}
+
+.btn{
+				width: 110px;
+				height: 30px;
+				border-radius: 20px;
+				font-size: 11px;
+				font-weight: 700;
+				border: 1px solid #512d20;
+				background: transparent;
+				color: #512d20;
+				display:flex;
+				align-items:center;
+				justify-content: center;
+				margin-bottom:1em;			
+}
+
+.btn:hover{
+	background-color:#512d20;
+	color: #fcecdc;
+}
+
+
+
+.infos__lateral{
+	width:115px;
+	height:100px;
+	background-color: #d0afa0;
+	color: #512d20;
+	font-size: 18px;
+	font-weight:700;
+	text-align:center;
+	padding: 2.5em 0 0 0;
+	margin-bottom:0.1em;
+	line-height: 0.2em;
+}
+
+.follow{
+	margin-bottom:0px;
+}
+.sub{
+	font-size: 12px;
+	font-weight:300;
+}
+
+.infos__lateral:hover{
+	background-color: #a47c5c;
+	
+}
