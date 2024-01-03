@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #c28b67;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	width: 230px;
+	height:230px;
+	background-color:  #461e13;
+	border-radius:50%;
+	border: 8px solid #a47c5c; 
+
+}
+
+.prim__circulo{
+	position: absolute;
+  top: 5%;
+  left: 3%;
+	margin-top: -2.5px;
+  margin-left: 2px;
+	width: 205px;
+	height:205px;
+	background-color:  #461e13;
+	border-radius:50%;
+	border: 4px solid white;
+  border-style: dotted;
+	
+}
+.interno circle {
+  stroke: #fcecdc;
+  stroke-width: 3;
+  fill: none;
+  stroke-dasharray: 625;
+	animation: spinner 5s linear infinite;
+  transform-origin: center center;
+  transform: rotate(-90deg);
+}
+
+@keyframes spinner {
+  0% {
+    stroke-dashoffset: 625;
+    transform: rotate(-90deg) scaleY(1);
+  }
+  50% {
+    stroke-dashoffset: 0;
+    transform: rotate(-90deg) scaleY(1);
+  }
+  50.0001% {
+    transform: rotate(-90deg) scaleY(-1);
+  }
+  100% {
+    stroke-dashoffset: 625;
+    transform: rotate(-90deg) scaleY(-1);
+  }
+}
+
+.data{
+    position: relative;
+    top: 24%;
+    line-height: 10px;
+    text-align: center;
+		color: white;
+		fonte-size: 20px;
+}
+
+.info{
+	font-size:11px;
+}
+
+.hora{
+	font-size:42px;
+	margin-top: 0.7em;
+	margin-botton: 5em;
+}
+
+.kcal{
+    position: relative;
+		
+    left: 14%;
+		
+		font-size:10px;
+}
+span{
+    position: absolute;
+    top: 62.5%;
+    left: 17%;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(237, 9, 9); 
+    font-size: large;
+    animation: heart 0.5s cubic-bezier(0,0,1,1) 0s infinite alternate both ;
+}
+
+.num{
+	font-size:10px;
+}
+
+@keyframes heart {
+    0%{
+        transform: scale(0);
+        font-size: large;
+    }
+    100%{
+        font-size: smaller;
+        transform: scale(1);
+    }
+    
+}
+
+
