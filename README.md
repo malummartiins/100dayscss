@@ -1,5 +1,9 @@
 # 100 DAYS CSS
 
+## 🔗  vamos ver funcionando?
+Para ver o resultado final de cada desafio, é só acessar meu perfil no CodePen:
+https://codepen.io/malummartiins
+
 O site https://100dayscss.com/ tem um desafio onde por 100 dias você faz pequenos desafios para aperfeiçoar suas habilidades em CSS,
 vou postando nesse repositório todos os meus códigos.
 
